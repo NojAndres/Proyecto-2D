@@ -1,0 +1,92 @@
+:root {
+  --font-family: "'Alatsi', sans-serif";
+  --font-size-Title1: clamp(3rem, 2.5vw, 4rem); /*64/16px = 4rem*/
+  --font-size-Title2: clamp(2rem, 2.5vw, 3rem);
+  --font-size-Title3: clamp(1.75rem, 2.5vw, 2.5rem);
+  --font-size-Title4: clamp(1rem, 2.5vw, 1.5rem);
+  --font-size-Title5: clamp(0.5rem, 2.5vw, 1.5rem);
+  --font-size-Body: clamp(0.7rem, 2.5vw, 1rem);
+  --font-size-Body1: clamp(1rem, 2.5vw, 1rem);
+  --backgroud-Button: #122c89;
+  --backgroud-Button-hover: #0f2575;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+}
+
+.HeroImage {
+  background-color: #000000;
+  height: 100vh;
+}
+
+.texto-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 50% auto;
+  width: 80%;
+}
+
+.texto-hero h2 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media only screen and (min-width: 1024px) {
+  .texto-hero {
+    margin: 15% auto;
+  }
+
+  .iphoneImage {
+    display: none;
+  }
+}
+
+/* Another section */
+
+.heroIphone {
+  height: 100vh;
+  background-color: #000000;
+}
+
+.container-content {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto auto;
+}
+
+.container-content p {
+  text-align: justify;
+  color: #eaeaea;
+}
+
+.bg {
+  background: #000;
+}
+
+@media only screen and (min-width: 1024px) {
+  .heroIphone {
+    background-image: url('../Img/tienda/IphoneNew.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+  }
+
+  .container-content {
+    width: 30%;
+    margin-left: 65%;
+    background: rgba(177, 177, 177, 0.081);
+    background: radial-gradient(
+      circle,
+      rgba(177, 177, 177, 0.571) 0%,
+      rgba(206, 206, 206, 0.333) 100%,
+    );
+    border-radius: 100%;
+  }
+}
